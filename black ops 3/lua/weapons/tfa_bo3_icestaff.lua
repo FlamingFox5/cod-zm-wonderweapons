@@ -25,7 +25,7 @@ SWEP.CameraAttachmentOffsets = {}
 SWEP.CameraAttachmentScale = 1
 SWEP.MuzzleAttachment = 1
 SWEP.MuzzleAttachmentSilenced = 1
-SWEP.VMPos = Vector(0, 0, 0)
+SWEP.VMPos = Vector(0, -6, -1.5)
 SWEP.VMAng = Vector(0, 0, 0)
 SWEP.VMPos_Additive = true
 
@@ -108,8 +108,8 @@ SWEP.ViewModelPunchYawMultiplier = 0.3 -- Default value is 0.6
 SWEP.ViewModelPunchYawMultiplier_IronSights = 0.1 -- Default value is 0.25
 
 --[Spread Related]--
-SWEP.Primary.Spread		  = .025
-SWEP.Primary.IronAccuracy = .005
+SWEP.Primary.Spread		  = .1
+SWEP.Primary.IronAccuracy = .1
 SWEP.IronRecoilMultiplier = 0.6
 SWEP.CrouchAccuracyMultiplier = 0.85
 

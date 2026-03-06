@@ -96,7 +96,7 @@ function ENT:Initialize()
 
 		local vecMin, vecMax = phys:GetAABB()
 		if not vecMax or not isvector( vecMax ) or vecMax == vector_origin then
-			vecMin, vecMax = entity:GetCollisionBounds()
+			vecMin, vecMax = self:GetCollisionBounds()
 		end
 
 		local padding = Vector(0.1, 0.1, 0.1)

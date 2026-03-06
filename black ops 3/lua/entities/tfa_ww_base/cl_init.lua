@@ -42,6 +42,8 @@ function ENT:Draw( nFlags )
 
 	if ( ( self.GetActivated and ( self:GetActivated() and !self.TrailEffectActiveLooping ) ) or ( self.GetImpacted and self:GetImpacted() ) ) and self.TrailCNewParticle and IsValid( self.TrailCNewParticle ) then
 		self.TrailCNewParticle:StopEmission()
+	elseif ( ( self.GetActivated and ( !self:GetActivated() and self.TrailEffectActiveLooping ) ) and self.TrailCNewParticle and IsValid( self.TrailCNewParticle ) then
+		self.TrailCNewParticle:StopEmission()
 	end
 end
 

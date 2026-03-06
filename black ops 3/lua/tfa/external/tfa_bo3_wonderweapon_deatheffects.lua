@@ -100,7 +100,7 @@ WonderWeapons.AddDeathEffect("BloodyGib_Ragdoll", {
 })
 
 WonderWeapons.AddDeathEffect("BO3_Wunderwaffe", {
-	Type = bit.bor(EffectType.ON_DEATH, EffectType.ON_RAGDOLL),
+	Type = bit.bor( EffectType.ON_DEATH, EffectType.ON_RAGDOLL ),
 
 	IsValid = function( self, entity )
 		return entity.GetDrawCallParticle and IsValid( entity:GetDrawCallParticle( "BO3_Wunderwaffe" ) )
@@ -184,6 +184,11 @@ WonderWeapons.AddDeathEffect("BO3_Wunderwaffe", {
 			end
 		end
 
+		/*local mouthAtt = WonderWeapons.GetMouthAttachment( entity )
+		if ( mouthAtt ) then
+			ragdoll:AddDrawCallParticle(  upgraded and "bo3_waffe_eyes_2" or "bo3_waffe_eyes", PATTACH_POINT_FOLLOW, mouthAtt, true, "BO3_Wunderwaffe_Mouth" )
+		end*/
+
 		ragdoll:AddDrawCallParticle( upgraded and "bo3_waffe_ground_2" or "bo3_waffe_ground", PATTACH_ABSORIGIN_FOLLOW, 1, true, "BO3_Wunderwaffe_Ground" )
 	end,
 
@@ -220,6 +225,11 @@ WonderWeapons.AddDeathEffect("BO3_Wunderwaffe", {
 			end
 		end
 
+		/*local mouthAtt = WonderWeapons.GetMouthAttachment( entity )
+		if ( mouthAtt ) then
+			ragdoll:AddDrawCallParticle(  upgraded and "bo3_waffe_eyes_2" or "bo3_waffe_eyes", PATTACH_POINT_FOLLOW, mouthAtt, true, "BO3_Wunderwaffe_Mouth" )
+		end*/
+
 		ragdoll:AddDrawCallParticle( upgraded and "bo3_waffe_ground_2" or "bo3_waffe_ground", PATTACH_ABSORIGIN_FOLLOW, 1, true, "BO3_Wunderwaffe_Ground" )
 	end,
 
@@ -231,6 +241,7 @@ WonderWeapons.AddDeathEffect("BO3_Wunderwaffe", {
 		WonderWeapons.StopDrawParticle( entity, "BO3_Wunderwaffe_Eye", destroy )
 		WonderWeapons.StopDrawParticle( entity, "BO3_Wunderwaffe_Ground", destroy )
 		WonderWeapons.StopDrawParticle( entity, "BO3_Wunderwaffe_Flare", destroy )
+		WonderWeapons.StopDrawParticle( entity, "BO3_Wunderwaffe_Mouth", destroy )
 		WonderWeapons.StopDrawParticle( entity, "BO3_Wunderwaffe", destroy )
 	end,
 })

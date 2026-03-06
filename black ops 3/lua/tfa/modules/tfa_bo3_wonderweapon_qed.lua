@@ -431,7 +431,9 @@ WonderWeapons.AddQuantumBombEffect("DamageNearby", {
 		}
 
 		for _, ent in pairs(ents.FindInSphere(vecSrc, 500)) do
-			if not ent:IsPlayer() and not ent:Alive() then continue end
+			if !ent:IsPlayer() or !ent:Alive() then
+				continue
+			end
 
 			local vecSpot = BodyTarget(ent, vecSrc, true)
 			local dir = ( vecSpot - vecSrc ):GetNormalized()
@@ -445,7 +447,9 @@ WonderWeapons.AddQuantumBombEffect("DamageNearby", {
 			damage:SetDamagePosition( trace.Entity == ent and trace.HitPos or vecSpot )
 			damage:SetAttacker( ent )
 
-			ent:SetArmor( 0 )
+			if ent.SetArmor then
+				ent:SetArmor( 0 )
+			end
 
 			if trace.Entity == ent then
 				trace.HitGroup = trace.HitGroup == HITGROUP_HEAD and HITGROUP_HEAD or HITGROUP_GENERIC
@@ -634,16 +638,18 @@ WonderWeapons.AddQuantumBombEffect("DropEquipment", {
 					ammoCrates[ itemClass ] = nil
 
 					local crate = ents.Create( "item_item_crate" )
-					crate:SetPos( startPos )
-					crate:SetAngles( self.GetRoll and self:GetRoll() or self:GetAngles() )
+					if IsValid( crate ) then
+						crate:SetPos( startPos )
+						crate:SetAngles( self.GetRoll and self:GetRoll() or self:GetAngles() )
 
-					crate:SetKeyValue( "CrateType", 0 )
-					crate:SetKeyValue( "ItemClass", itemClass )
-					crate:SetKeyValue( "ItemCount", ammoCounts[itemClass] )
+						crate:SetKeyValue( "CrateType", 0 )
+						crate:SetKeyValue( "ItemClass", itemClass )
+						crate:SetKeyValue( "ItemCount", ammoCounts[itemClass] )
 
-					crate:Spawn()
+						crate:Spawn()
 
-					crate:Activate()
+						crate:Activate()
+					end
 				end
 			end )
 		end
@@ -748,7 +754,7 @@ WonderWeapons.AddQuantumBombEffect("SpingunLauncher", {
 		spingun:SetModel("models/weapons/tfa_bo3/qed/w_maxgl.mdl")
 		spingun:SetPos(self:GetPos() + Vector(0,0,54))
 		spingun:SetAngles(angle_zero)
-		spingun:SetOwner(self:GetOwner())
+		//spingun:SetOwner(self:GetOwner())
 
 		spingun.ShootSound = "TFA_BO3_QED.MAXGL.Fire"
 		spingun.NumShots = 1
@@ -776,7 +782,7 @@ WonderWeapons.AddQuantumBombEffect("SpingunRifle", {
 		spingun:SetModel("models/weapons/tfa_bo3/qed/w_kn44.mdl")
 		spingun:SetPos(self:GetPos() + Vector(0,0,54))
 		spingun:SetAngles(angle_zero)
-		spingun:SetOwner(self:GetOwner())
+		//spingun:SetOwner(self:GetOwner())
 
 		spingun.ShootSound = "TFA_BO3_QED.KN44.Fire"
 		spingun.NumShots = 1
@@ -801,7 +807,7 @@ WonderWeapons.AddQuantumBombEffect("SpingunShotgun", {
 		spingun:SetModel("models/weapons/tfa_bo3/qed/w_haymaker.mdl")
 		spingun:SetPos(self:GetPos() + Vector(0,0,54))
 		spingun:SetAngles(angle_zero)
-		spingun:SetOwner(self:GetOwner())
+		//spingun:SetOwner(self:GetOwner())
 
 		spingun.ShootSound = "TFA_BO3_QED.HMKR.Fire"
 		spingun.NumShots = 8
@@ -832,7 +838,7 @@ WonderWeapons.AddQuantumBombEffect("SpingunRaygun", {
 		spingun:SetModel(mk2 and mdl2 or mdl1)
 		spingun:SetPos(self:GetPos() + Vector(0,0,54))
 		spingun:SetAngles(angle_zero)
-		spingun:SetOwner(self:GetOwner())
+		//spingun:SetOwner(self:GetOwner())
 
 		spingun.ShootSound = mk2 and "TFA_BO3_MK2.Shoot" or "TFA_BO3_RAYGUN.Shoot"
 		spingun.NumShots = 1
@@ -1105,30 +1111,36 @@ WonderWeapons.AddQuantumBombEffect("SpawnEnemies", {
 				}
 
 				local ent = ents.Create(i == 1 and "npc_antlionguard" or ants[chance])
-				ent:SetPos(entpos)
-				if acid and i == 1 then
-					ent:SetKeyValue("cavernbreed", "1")
-					ent:SetKeyValue("incavern", "1")
+				if IsValid( ent ) then
+					ent:SetPos(entpos)
+					if acid and i == 1 then
+						ent:SetKeyValue("cavernbreed", "1")
+						ent:SetKeyValue("incavern", "1")
+					end
+
+					ent:Spawn()
+					ent:Activate()
+
+					UndoAdd(ent, ply, enttype)
 				end
-
-				ent:Spawn()
-
-				UndoAdd(ent, ply, enttype)
 			elseif enttype == 2 then
 				local ent = ents.Create("npc_combine_s")
-				ent:SetPos(entpos)
-				ent:SetModel(models[chance])
-				ent:SetKeyValue( "SquadName", "overwatch" )
-				ent:SetKeyValue( "Numgrenades", nades[chance] )
+				if IsValid( ent ) then
+					ent:SetPos(entpos)
+					ent:SetModel(models[chance])
+					ent:SetKeyValue( "SquadName", "overwatch" )
+					ent:SetKeyValue( "Numgrenades", nades[chance] )
 
-				if chance == 2 then
-					ent:SetKeyValue( "skin", 1 )
+					if chance == 2 then
+						ent:SetKeyValue( "skin", 1 )
+					end
+
+					ent:Spawn()
+					ent:Give(weapon[chance])
+					ent:Activate()
+
+					UndoAdd(ent, ply, enttype)
 				end
-
-				ent:Spawn()
-				ent:Give(weapon[chance])
-
-				UndoAdd(ent, ply, enttype)
 			elseif enttype == 1 then
 				local zombies = {
 					[1] = "npc_zombie",
@@ -1137,10 +1149,13 @@ WonderWeapons.AddQuantumBombEffect("SpawnEnemies", {
 				}
 
 				local ent = ents.Create(zombies[chance])
-				ent:SetPos(entpos)
-				ent:Spawn()
+				if IsValid( ent ) then
+					ent:SetPos(entpos)
+					ent:Spawn()
+					ent:Activate()
 
-				UndoAdd(ent, ply, enttype)
+					UndoAdd(ent, ply, enttype)
+				end
 			end
 			i = i + 1
 		end

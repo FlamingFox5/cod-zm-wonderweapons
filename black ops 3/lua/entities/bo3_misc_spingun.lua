@@ -84,7 +84,7 @@ function ENT:ShootGun()
 		local dir = ang:Forward() 
 
 		local bul = {
-			Attacker = self:GetOwner(),
+			Attacker = IsValid( self:GetOwner() ) and self:GetOwner() or self,
 			Damage = self.Damage,
 			Force = 1,
 			Distance = self.Distance,
@@ -92,7 +92,7 @@ function ENT:ShootGun()
 			Tracer = 1,
 			Dir = dir,
 			Spread = self.Spread,
-			Src = self:GetPos(),
+			Src = self.MuzzleAttach and self:GetAttachment( self.MuzzleAttach ).Pos or self:GetPos(),
 			IgnoreEntity = self
 		}
 

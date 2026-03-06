@@ -31,6 +31,7 @@ ENT.HullMins = ENT.HullMaxs:GetNegated()
 ENT.TrailEffect = "bo3_dg4_placed"
 ENT.TrailAttachType = PATTACH_ABSORIGIN_FOLLOW
 ENT.TrailAttachPoint = 1
+ENT.TrailEffectActiveLooping = true
 
 ENT.BubbleTrail = false
 
@@ -264,7 +265,7 @@ local liftclasses = {
 function ENT:DisableVortex()
 	self:SetActivated(false)
 
-	self:StopParticles()
+	//self:StopParticles()
 
 	ParticleEffect("bo3_dg4_finish", self:GetPos(), angle_zero)
 
