@@ -44,7 +44,7 @@ ENT.ZapRangePaP = 500
 ENT.ZapRangeStart = 200
 
 ENT.AttachNPCEffect = false
-ENT.PlayerShockRange = 64
+ENT.PlayerShockRange = 40
 ENT.Decay = 20
 
 // Default Settings
@@ -409,7 +409,20 @@ function ENT:OnCollide(ent, vecSrc)
 		self:StopParticles()
 
 		if self.FiredFromAFuckingGun and IsValid(ply) and !nZSTORM then
-			local direction = (ply:WorldSpaceCenter() - vecSrc):GetNormalized()
+			local vecMins, vecMaxs = ply:GetCollisionBounds()
+			if ply:IsPlayer() then
+				vecMins, vecMaxs = ply:GetHull()
+			end
+
+			local vecSpot = ply:NearestPoint( vecSrc )
+			if ply:IsPointInBounds( vecSrc ) then
+				vecSpot = ply:WorldSpaceCenter()
+			end
+
+			local vecPos = ply:GetPos()
+
+			local direction = ( Vector( vecPos[1], vecPos[2], vecSpot[3] ) - vecSrc ):GetNormalized()
+
 			local trace = util.TraceLine({
 				start = vecSrc,
 				endpos = vecSrc + direction*self.PlayerShockRange,

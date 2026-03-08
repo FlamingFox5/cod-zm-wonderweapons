@@ -15,25 +15,6 @@ if CLIENT then
 end
 
 if SERVER then
-	local MeetTheJasons = {
-		[ 'nz_zombie_boss_jason' ] = true,
-		[ 'nz_zombie_boss_jason_final' ] = true,
-		[ 'nz_zombie_boss_jason_hell' ] = true,
-		[ 'nz_zombie_boss_jason_savini' ] = true,
-	}
-
-	hook.Add( "EntityTakeDamage", "Jason_Derulo", function( entity, damageinfo )
-		if MeetTheJasons[ entity:GetClass() ] and math.Round( damageinfo:GetDamage() ) > ( entity:Health() * 0.75 ) then
-			damageinfo:SetDamage( 0 )
-			damageinfo:SetDamageBonus( 0 )
-			damageinfo:SetMaxDamage( 0 )
-
-			entity:DoTheStunThingyIDFK( damageinfo )
-
-			return true
-		end
-	end )
-
 	hook.Add( "EntityTakeDamage", "TFA.BO3WW.FOX.EntityTakeDamage", function( ent, damageinfo )
 		if ent:IsPlayer() then
 			local pwep = ent:GetActiveWeapon()
@@ -262,7 +243,7 @@ if CLIENT then
 			filter = CLIENT_RAGDOLLS,
 		})
 
-		if !ragtrace.Hit then return end
+		if !IsValid( ragdoll.Entity ) then return end
 
 		local ragdoll = ragtrace.Entity
 		local mDeathFX = WonderWeapons.GetDeathEffect( ragdoll, "BO3_Wavegun_Cook" )
@@ -276,7 +257,7 @@ if CLIENT then
 
 			local flRagdollHealth = ragdoll.RagdollIntegrity
 
-			if ( mDeathFX:GetStartTime() + (mDeathFX:GetDuration() / 2) < CurTime() ) or force >= 15000 or ( flags and flags == AMMO_FORCE_DROP_IF_CARRIED ) or ( flRagdollHealth ~= nil and isnumber( flRagdollHealth ) and flRagdollHealth <= 0 ) then
+			if ( mDeathFX:GetStartTime() + (mDeathFX:GetDuration() / 2) < CurTime() ) or force >= 20 or ( flags and flags == AMMO_FORCE_DROP_IF_CARRIED ) or ( flRagdollHealth ~= nil and isnumber( flRagdollHealth ) and flRagdollHealth <= 0 ) then
 				WonderWeapons.RemoveStatus( ragdoll, "BO3_Wavegun_Cook" )
 				WonderWeapons.DoDeathEffect( ragdoll, "BO3_Wavegun_Pop" )
 			else

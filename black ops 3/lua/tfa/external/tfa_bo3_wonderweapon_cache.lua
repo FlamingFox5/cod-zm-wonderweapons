@@ -500,51 +500,51 @@ WonderWeapons.BoltImpactSoundMaterials = {
 WonderWeapons.PressureSuitDefaults = {}
 
 // Workshop
-WonderWeapons.PressureSuitDefaults["models/johnfuckingward.mdl"] = { [1] = 0.5, [2] = 0, [3] = 0.94, [4] = 1.02, [5] = 1.02, [6] = 1.02, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/fatherfuckengarcia.mdl"] = { [1] = 0.5, [2] = 0, [3] = 0.94, [4] = 1.02, [5] = 1.02, [6] = 1.02, [7] = 0, [8] = 0, [9] = 0 }
+WonderWeapons.PressureSuitDefaults["models/johnfuckingward.mdl"] = { [1] = 0.5, [2] = 0, [3] = 0.94, [4] = 1.02, [5] = 1.02, [6] = 1.02, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/fatherfuckengarcia.mdl"] = { [1] = 0.5, [2] = 0, [3] = 0.94, [4] = 1.02, [5] = 1.02, [6] = 1.02, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
 
-WonderWeapons.PressureSuitDefaults["models/n7legion/fortnite/hybrid_player_alt.mdl"] = { [1] = -0.3, [2] = 0, [3] = 0, [4] = 1.1, [5] = 1.1, [6] = 1.1, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/n7legion/fortnite/hybrid_player.mdl"] = { [1] = -0.3, [2] = 0, [3] = 0, [4] = 1.1, [5] = 1.1, [6] = 1.1, [7] = 0, [8] = 0, [9] = 0 }
+WonderWeapons.PressureSuitDefaults["models/n7legion/fortnite/hybrid_player_alt.mdl"] = { [1] = -0.3, [2] = 0, [3] = 0, [4] = 1.1, [5] = 1.1, [6] = 1.1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/n7legion/fortnite/hybrid_player.mdl"] = { [1] = -0.3, [2] = 0, [3] = 0, [4] = 1.1, [5] = 1.1, [6] = 1.1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
 
-WonderWeapons.PressureSuitDefaults["models/pacagma/mizuki_ninja/mizuki/mizuki_player.mdl"] = { [1] = -2.5, [2] = 0, [3] = 0.57, [4] = 1.1, [5] = 1.1, [6] = 1.1, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/pacagma/kaiden/kaiden_player.mdl"] = { [1] = -1.5, [2] = 0, [3] = 2, [4] = 1.1, [5] = 1.1, [6] = 1.1, [7] = 0, [8] = 0, [9] = 0 }
+WonderWeapons.PressureSuitDefaults["models/pacagma/mizuki_ninja/mizuki/mizuki_player.mdl"] = { [1] = -2.5, [2] = 0, [3] = 0.57, [4] = 1.1, [5] = 1.1, [6] = 1.1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/pacagma/kaiden/kaiden_player.mdl"] = { [1] = -1.5, [2] = 0, [3] = 2, [4] = 1.1, [5] = 1.1, [6] = 1.1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
 
-WonderWeapons.PressureSuitDefaults["models/player/deltarune/tasque_manager/tasque_Manager_toastador_pm.mdl"] = { [1] = -1, [2] = 0, [3] = 1, [4] = 1.1, [5] = 1.1, [6] = 1.1, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/player/fortnite/fennix/fennix_pm.mdl"] = { [1] = -0.3, [2] = 0, [3] = 0, [4] = 1.09, [5] = 1.09, [6] = 1.09, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/player/dewobedil/mike_myers/default_p.mdl"] = { [1] = -0.5, [2] = 0, [3] = 0, [4] = 1 , [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0 }
+WonderWeapons.PressureSuitDefaults["models/player/deltarune/tasque_manager/tasque_Manager_toastador_pm.mdl"] = { [1] = -1, [2] = 0, [3] = 1, [4] = 1.1, [5] = 1.1, [6] = 1.1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/player/fortnite/fennix/fennix_pm.mdl"] = { [1] = -0.3, [2] = 0, [3] = 0, [4] = 1.09, [5] = 1.09, [6] = 1.09, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/player/dewobedil/mike_myers/default_p.mdl"] = { [1] = -0.5, [2] = 0, [3] = 0, [4] = 1 , [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
 
-WonderWeapons.PressureSuitDefaults["models/silly_willy/goob/puro_pm.mdl"] = { [1] = -1.9, [2] = 0, [3] = 0.2, [4] = 1.5, [5] = 1.5, [6] = 1.5, [7] = 21, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/keepitwilde/raventl/raventl_pm.mdl"] = { [1] = -1.3, [2] = 0, [3] = -2.5, [4] = 0.82, [5] = 0.82, [6] = 0.82, [7] = 0, [8] = 0, [9] = 0 }
+WonderWeapons.PressureSuitDefaults["models/silly_willy/goob/puro_pm.mdl"] = { [1] = -1.9, [2] = 0, [3] = 0.2, [4] = 1.5, [5] = 1.5, [6] = 1.5, [7] = 21, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/keepitwilde/raventl/raventl_pm.mdl"] = { [1] = -1.3, [2] = 0, [3] = -2.5, [4] = 0.82, [5] = 0.82, [6] = 0.82, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
 
-WonderWeapons.PressureSuitDefaults["models/losos/pseudoregalia/sybil/sybil.mdl"] = { [1] = -0.2, [2] = 0, [3] = 1, [4] = 1.1, [5] = 1.1, [6] = 1.1, [7] = 0, [8] = 0, [9] = 0 }
+WonderWeapons.PressureSuitDefaults["models/losos/pseudoregalia/sybil/sybil.mdl"] = { [1] = -0.2, [2] = 0, [3] = 1, [4] = 1.1, [5] = 1.1, [6] = 1.1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
 
-WonderWeapons.PressureSuitDefaults["models/payton/payton_codkitty.mdl"] = { [1] = -1.5, [2] = 0, [3] = 1, [4] = 1.05, [5] = 1.05, [6] = 1.05, [7] = 0, [8] = 0, [9] = 0 }
+WonderWeapons.PressureSuitDefaults["models/payton/payton_codkitty.mdl"] = { [1] = -1.5, [2] = 0, [3] = 1, [4] = 1.05, [5] = 1.05, [6] = 1.05, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
 
-WonderWeapons.PressureSuitDefaults["models/captainbigbutt/vocaloid/fall_miku.mdl"] = { [1] = -2.1, [2] = 0, [3] = 0, [4] = 0.95, [5] = 0.95, [6] = 0.95, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/captainbigbutt/vocaloid/green_miku.mdl"] = { [1] = -2.1, [2] = 0, [3] = 0, [4] = 0.95, [5] = 0.95, [6] = 0.95, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/captainbigbutt/vocaloid/miku_sacura.mdl"] = { [1] = -2.1, [2] = 0, [3] = 0, [4] = 0.95, [5] = 0.95, [6] = 0.95, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/captainbigbutt/vocaloid/summer_miku.mdl"] = { [1] = -2.1, [2] = 0, [3] = 0, [4] = 0.95, [5] = 0.95, [6] = 0.95, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/captainbigbutt/vocaloid/winter_miku.mdl"] = { [1] = -2.1, [2] = 0, [3] = 0, [4] = 0.95, [5] = 0.95, [6] = 0.95, [7] = 0, [8] = 0, [9] = 0 }
+WonderWeapons.PressureSuitDefaults["models/captainbigbutt/vocaloid/fall_miku.mdl"] = { [1] = -2.1, [2] = 0, [3] = 0, [4] = 0.95, [5] = 0.95, [6] = 0.95, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/captainbigbutt/vocaloid/green_miku.mdl"] = { [1] = -2.1, [2] = 0, [3] = 0, [4] = 0.95, [5] = 0.95, [6] = 0.95, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/captainbigbutt/vocaloid/miku_sacura.mdl"] = { [1] = -2.1, [2] = 0, [3] = 0, [4] = 0.95, [5] = 0.95, [6] = 0.95, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/captainbigbutt/vocaloid/summer_miku.mdl"] = { [1] = -2.1, [2] = 0, [3] = 0, [4] = 0.95, [5] = 0.95, [6] = 0.95, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/captainbigbutt/vocaloid/winter_miku.mdl"] = { [1] = -2.1, [2] = 0, [3] = 0, [4] = 0.95, [5] = 0.95, [6] = 0.95, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
 
 // Default
-WonderWeapons.PressureSuitDefaults["models/player/arctic.mdl"] = { [1] = -1, [2] = 0, [3] = 1, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/player/guerilla.mdl"] = { [1] = -1, [2] = 0, [3] = 1, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/player/leet.mdl"] = { [1] = -0.200, [2] = 0, [3] = 1.5, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/player/phoenix.mdl"] = { [1] = 0, [2] = 0, [3] = 1.5, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/player/gasmask.mdl"] = { [1] = -0.4, [2] = 0, [3] = 1.5, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/player/riot.mdl"] = { [1] = -0.7, [2] = 0, [3] = 1, [4] = 1.05, [5] = 1.05, [6] = 1.05, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/player/swat.mdl"] = { [1] = -0.5, [2] = 0, [3] = 1, [4] = 1.05, [5] = 1.05, [6] = 1.05, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/player/urban.mdl"] = { [1] = -0.5, [2] = 0, [3] = 1.2, [4] = 1.05, [5] = 1.05, [6] = 1.05, [7] = 0, [8] = 0, [9] = 0 }
+WonderWeapons.PressureSuitDefaults["models/player/arctic.mdl"] = { [1] = -1, [2] = 0, [3] = 1, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/player/guerilla.mdl"] = { [1] = -1, [2] = 0, [3] = 1, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/player/leet.mdl"] = { [1] = -0.200, [2] = 0, [3] = 1.5, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/player/phoenix.mdl"] = { [1] = 0, [2] = 0, [3] = 1.5, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/player/gasmask.mdl"] = { [1] = -0.4, [2] = 0, [3] = 1.5, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/player/riot.mdl"] = { [1] = -0.7, [2] = 0, [3] = 1, [4] = 1.05, [5] = 1.05, [6] = 1.05, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/player/swat.mdl"] = { [1] = -0.5, [2] = 0, [3] = 1, [4] = 1.05, [5] = 1.05, [6] = 1.05, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/player/urban.mdl"] = { [1] = -0.5, [2] = 0, [3] = 1.2, [4] = 1.05, [5] = 1.05, [6] = 1.05, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
 
-WonderWeapons.PressureSuitDefaults["models/player/hostage/hostage_01.mdl"] = { [1] = 0.5, [2] = 0, [3] = 0, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/player/hostage/hostage_02.mdl"] = { [1] = 0.5, [2] = 0, [3] = 0, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/player/hostage/hostage_03.mdl"] = { [1] = 0.5, [2] = 0, [3] = 0, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/player/hostage/hostage_04.mdl"] = { [1] = 0.5, [2] = 0, [3] = 0, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0 }
+WonderWeapons.PressureSuitDefaults["models/player/hostage/hostage_01.mdl"] = { [1] = 0.5, [2] = 0, [3] = 0, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/player/hostage/hostage_02.mdl"] = { [1] = 0.5, [2] = 0, [3] = 0, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/player/hostage/hostage_03.mdl"] = { [1] = 0.5, [2] = 0, [3] = 0, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/player/hostage/hostage_04.mdl"] = { [1] = 0.5, [2] = 0, [3] = 0, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
 
-WonderWeapons.PressureSuitDefaults["models/player/dod_american.mdl"] = { [1] = -0.5, [2] = 0, [3] = 0, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/player/dod_german.mdl"] = { [1] = -0.5, [2] = 0, [3] = 0, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0 }
+WonderWeapons.PressureSuitDefaults["models/player/dod_american.mdl"] = { [1] = -0.5, [2] = 0, [3] = 0, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/player/dod_german.mdl"] = { [1] = -0.5, [2] = 0, [3] = 0, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
 
-WonderWeapons.PressureSuitDefaults["models/player/gman_high.mdl"] = { [1] = 0, [2] = 0, [3] = 0.6, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/player/police.mdl"] = { [1] = 0.5, [2] = 0, [3] = 0.5, [4] = 1.05, [5] = 1.05, [6] = 1.05, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/player/police_fem.mdl"] = { [1] = 0, [2] = 0, [3] = -1, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0 }
-WonderWeapons.PressureSuitDefaults["models/player/zombie_soldier.mdl"] = { [1] = 0, [2] = 0, [3] = 1, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0 }
+WonderWeapons.PressureSuitDefaults["models/player/gman_high.mdl"] = { [1] = 0, [2] = 0, [3] = 0.6, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/player/police.mdl"] = { [1] = 0.5, [2] = 0, [3] = 0.5, [4] = 1.05, [5] = 1.05, [6] = 1.05, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/player/police_fem.mdl"] = { [1] = 0, [2] = 0, [3] = -1, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }
+WonderWeapons.PressureSuitDefaults["models/player/zombie_soldier.mdl"] = { [1] = 0, [2] = 0, [3] = 1, [4] = 1, [5] = 1, [6] = 1, [7] = 0, [8] = 0, [9] = 0, [10] = "ValveBiped.Bip01_Head1" }

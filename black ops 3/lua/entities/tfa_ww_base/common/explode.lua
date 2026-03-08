@@ -584,8 +584,8 @@ function ENT:Explode(vecSrc, radius, direction, edgeEffectiveness, damageinfo, i
 				fx:SetEntity( self )
 				fx:SetOrigin( trace.HitPos + trace.Normal*256 )
 				fx:SetStart( trace.StartPos )
-				//fx:SetScale( math.Rand( 0.2, 0.5 ) )
-				//fx:SetFlags( 1 )
+				fx:SetScale( math.Rand( 0.2, 0.5 ) )
+				fx:SetFlags( 1 )
 
 				DispatchEffect( "Tracer", fx, false, true )
 			end

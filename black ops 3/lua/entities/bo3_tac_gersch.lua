@@ -30,10 +30,6 @@ ENT.BounceSound = "TFA_BO3_GERSCH.Bounce"
 ENT.BounceActivationSpeed = 100
 ENT.BounceVelocityRatio = 0.4
 
-ENT.DisablePhysicsOnActivate = true
-
-ENT.ParentToMoveableEntities = true
-
 ENT.ImpactBubbles = true
 ENT.ImpactBubblesSize = 32
 ENT.ImpactBubblesMagnitude = 0.5

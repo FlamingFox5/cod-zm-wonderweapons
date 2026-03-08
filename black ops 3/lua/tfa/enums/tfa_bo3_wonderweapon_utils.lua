@@ -162,6 +162,24 @@ end
 // Helper Functions
 //-------------------------------------------------------------
 
+// dear rubat, consider the following
+
+if ( util ) and util.CoinFlip == nil then
+	function util.CoinFlip( tries )
+		if tries and isnumber( tries ) and tries > 0 then
+			for i = 1, tries do
+				if ( math.random( 2 ) == 1 ) then
+					return true
+				end
+			end
+
+			return false
+		else
+			return ( math.random( 2 ) == 1 )
+		end
+	end
+end
+
 // Sick and tired of having to copy paste the same code block for something that should be a single function in the base game
 
 function TFA.WonderWeapon.SafeRemoveRagdoll( ragdoll, delay )
